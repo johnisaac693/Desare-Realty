@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,800&display=swap');
 body{
 font-family: 'Inter', sans-serif;
 margin: 0;
@@ -245,6 +246,53 @@ margin-bottom: 100px;
     color: white;
 }
 /* FLEX ITEM 5: NEWS */
+.mainbody .newscontainer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newscontainer .news{
+    width: 970px;
+}
+
+
+.flex-news{
+    display: flex;
+    gap: 10px;
+}
+
+.newsitem1{
+    flex-direction: row-reverse;
+}
+
+.newsbutton button{
+    background-color: #8A110B;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 18px;
+    padding-inline: 15px;
+    border: none;
+    width: 117px;
+    height: 47px;
+}
+
+.newsbutton button a{
+    text-decoration: none;
+    color: white;
+}
+
+.newstext .newsheader{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
 
 /* footer{
     border: solid 1px black;
