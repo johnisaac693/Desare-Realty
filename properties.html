@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DESARE REALTY : Properties</title>
+	<link rel="stylesheet" href="properties-style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+
+    <div class="navbar">
+		<img src="images/logo.jpg" alt="Logo">
+		<a href="#">Buy</a>
+		<a href="#">Sell</a>
+		<a href="#">Rent</a>
+        <a href="#">Mortgage</a> 
+        <a href="#">Find Agents</a> 
+        <a href="#">News & Trends</a> 
+        <div class="account">
+            <img src="images/user.png" alt="User">
+            <span><a href="#">Account</span></a> 
+        </div>  
+    </div>
+	
+	<div class="background">
+		<img src="images/pic1.jpg" alt="background">
+	</div>
+		
+	<div class="buttons">
+        <a href="#" class="black">Buy</a>
+        <a href="#">Rent</a>
+        <a href="#">Sell</a>
+        <a href="#">Agents</a>
+    </div>
+	
+    <div class="search-bar">
+        <input type="text" class="search" placeholder="Address, City, Zip, School and More">
+    </div>
+	
+	<div class="FindProperty">
+		<h3>FIND YOUR DREAM PROPERTY</h3>
+		<form>
+			<div class="form-group">
+				<label for="property-type">Property Type:</label>
+				<select id="property-type" name="property-type">
+					<option value="" selected disabled>PLEASE SELECT</option>
+					<option value="single">Single Attached</option>
+					<option value="townhouse">Townhouse</option>
+					<option value="condo">Condo</option>
+					<option value="apartment">Apartment</option>
+					<option value="bungalow">Bungalow</option>
+					<option value="cabin">Cabin</option>
+					<option value="house">House</option>
+				</select>
+			</div>
+			
+			<div class="form-group">
+				<label for="location">Location:</label>
+				<select id="location" name="location">
+					<option value="" selected disabled>PLEASE SELECT</option>
+					<option value="Biñan">Biñan</option>
+					<option value="Bungahan">Bungahan</option>
+					<option value="Canlalay">Canlalay</option>
+					<option value="Casile">Casile</option>
+					<option value="Dela Paz">Dela Paz</option>
+					<option value="Ganado">Ganado</option>
+					<option value="Langkiwa">Langkiwa</option>
+					<option value="Loma">Loma</option>
+					<option value="Malaban">Malaban</option>
+					<option value="Malamig">Malamig</option>
+					<option value="Mampalasan">Mampalasan</option>
+					<option value="Platero">Platero</option>
+					<option value="Poblacion">Poblacion</option>
+					<option value="San Antonio">San Antonio</option>
+					<option value="San Francisco">San Francisco</option>
+					<option value="San Jose">San Jose</option>
+					<option value="San Vicente">San Vicente</option>
+					<option value="Sto. Domingo">Sto. Domingo</option>
+					<option value="Soro-Soro">Soro-Soro</option>
+					<option value="Sto. Niño">Sto. Niño</option>
+					<option value="Sto. Tomas">Sto. Tomas</option>
+					<option value="Timbao">Timbao</option>
+					<option value="Tubigan">Tubigan</option>
+					<option value="Zapote">Zapote</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="price-range">Price Range:</label>
+				<select id="price-range" name="price-range">
+					<option value="" selected disabled>PLEASE SELECT</option>
+					<option value="<1M">Less than 1M</option>
+					<option value="1M-2M">1M-2M</option>
+					<option value="2M-3M">2M-3M</option>
+					<option value="3M-4M">3M-4M</option>
+					<option value="4M-5M">4M-5M</option>
+				</select>
+			</div>
+
+			<input class="property-search" type="submit" value="SEARCH">
+		</form>
+		
+		<div class="properties">
+			<h2>Houses around ₱3,000,000.00</h2>
+			<a href="#">Click to view more in Biñan, Laguna</a>
+			<div class="property-listing">
+				<div class="property-card">
+					<label class="new">New!</label>
+					<img src="images/H1.jpg" alt="House 1">
+					<div class="description">
+						<p>₱3,000,000</p>
+						<p>Single Attached</p>
+						<p>South Spring, Canlalay, Biñan, Laguna</p>
+					</div>
+					<div class="info">
+						<img src="images/bed.png" alt="Bed" class="bed"><p class="bed">3</p>
+						<img src="images/shower.png" alt="Shower" class="shower"><p class="shower">2</p>
+						<img src="images/sqm.png" alt="sqm" class="sqm"><p class="sqm">43m2</p>
+					</div>
+					<button>VIEW</button>
+				</div>
+				<div class="property-card">
+					<label class="new">New!</label>
+					<img src="images/H2.jpg" alt="House 2">
+					<div class="description">
+						<p>₱3,000,000</p>
+						<p>Townhouse</p>
+						<p>Vista Rosa, Soro-Soro, Biñan, Laguna</p>
+					</div>
+					<div class="heart-container">
+						<img src="images/heart.png" alt="Heart" class="heart">
+					</div>
+					<div class="info">
+						<img src="images/bed.png" alt="Bed" class="bed"><p class="bed">2</p>
+						<img src="images/shower.png" alt="Shower" class="shower"><p class="shower">1</p>
+						<img src="images/sqm.png" alt="sqm" class="sqm"><p class="sqm">30m2</p>
+					</div>
+					<button>VIEW</button>
+				</div><div class="property-card">
+					<img src="images/H3.jpg" alt="House 3">
+					<div class="description">
+						<p>₱2,800,000</p>
+						<p>Single Attached</p>
+						<p>Timbao, Biñan, Laguna</p>
+					</div>
+					<div class="heart-container">
+						<img src="images/heart.png" alt="Heart" class="heart">
+					</div>
+					<div class="info">
+						<img src="images/bed.png" alt="Bed" class="bed"><p class="bed">3</p>
+						<img src="images/shower.png" alt="Shower" class="shower"><p class="shower">2</p>
+						<img src="images/sqm.png" alt="sqm" class="sqm"><p class="sqm">50m2</p>
+					</div>
+					<button>VIEW</button>
+				</div><div class="property-card">
+					<img src="images/H4.jpg" alt="House 4">
+					<div class="description">
+						<p>₱3,200,000</p>
+						<p>Single Attached</p>
+						<p>South Spring, Canlalay, Biñan, Laguna</p>
+					</div>
+					<div class="heart-container">
+						<img src="images/heart.png" alt="Heart" class="heart">
+					</div>
+					<div class="info">
+						<img src="images/bed.png" alt="Bed" class="bed"><p class="bed">3</p>
+						<img src="images/shower.png" alt="Shower" class="shower"><p class="shower">2</p>
+						<img src="images/sqm.png" alt="sqm" class="sqm"><p class="sqm">55m2</p>
+					</div>
+					<button>VIEW</button>
+				</div>
+			</div>
+
+			<h2 class="new">New Listings</h2>
+			<a href="#">Click to view more in Biñan, Laguna</a>
+			<div class="property-listing">
+				<div class="property-card">
+					<label class="new">New!</label>
+					<img src="images/H6.jpg" alt="House 6">
+					<div class="description">
+						<p>₱1,800,000</p>
+						<p>Single Attached</p>
+						<p>San Antonio, Biñan, Laguna</p>
+					</div>
+					<div class="heart-container">
+						<img src="images/heart.png" alt="Heart" class="heart">
+					</div>
+					<div class="info">
+						<img src="images/bed.png" alt="Bed" class="bed"><p class="bed">2</p>
+						<img src="images/shower.png" alt="Shower" class="shower"><p class="shower">1</p>
+						<img src="images/sqm.png" alt="sqm" class="sqm"><p class="sqm">35m2</p>
+					</div>
+					<button>VIEW</button>
+				</div>
+				<div class="property-card">
+					<label class="new">New!</label>
+					<img src="images/H7.jpg" alt="House 7">
+					<div class="description">
+						<p>₱1,800,000</p>
+						<p>Single Attached</p>
+						<p>San Antonio, Biñan, Laguna</p>
+					</div>
+					<div class="heart-container">
+						<img src="images/heart.png" alt="Heart" class="heart">
+					</div>
+					<div class="info">
+						<img src="images/bed.png" alt="Bed" class="bed"><p class="bed">4</p>
+						<img src="images/shower.png" alt="Shower" class="shower"><p class="shower">3</p>
+						<img src="images/sqm.png" alt="sqm" class="sqm"><p class="sqm">100m2</p>
+					</div>
+					<button>VIEW</button>
+				</div><div class="property-card">
+					<label class="new">New!</label>
+					<img src="images/H8.jpg" alt="House 8">
+					<div class="description">
+						<p>₱1,800,000</p>
+						<p>Townhouse</p>
+						<p>Sto. Niño, Biñan, Laguna</p>
+					</div>
+					<div class="heart-container">
+						<img src="images/heart.png" alt="Heart" class="heart">
+					</div>
+					<div class="info">
+						<img src="images/bed.png" alt="Bed" class="bed"><p class="bed">2</p>
+						<img src="images/shower.png" alt="Shower" class="shower"><p class="shower">1</p>
+						<img src="images/sqm.png" alt="sqm" class="sqm"><p class="sqm">40m2</p>
+					</div>
+					<button>VIEW</button>
+				</div><div class="property-card">
+					<img src="images/H9.jpg" alt="House 9">
+					<div class="description">
+						<p>₱1,800,000</p>
+						<p>Townhouse</p>
+						<p>Sto. Niño, Biñan, Laguna</p>
+					</div>
+					<div class="heart-container">
+						<img src="images/heart.png" alt="Heart" class="heart">
+					</div>
+					<div class="info">
+						<img src="images/bed.png" alt="Bed" class="bed"><p class="bed">2</p>
+						<img src="images/shower.png" alt="Shower" class="shower"><p class="shower">1</p>
+						<img src="images/sqm.png" alt="sqm" class="sqm"><p class="sqm">60m2</p>
+					</div>
+					<button>VIEW</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="footer-logo">
+			<img src="images/fb.png" alt="Facebook">
+			<img src="images/in.png" alt="LinkedIn">
+			<img src="images/ig.png" alt="Instagram">
+		</div>
+		<div class="footer-buttons">
+			<a href="#">About Us</a>
+			<a href="#">Career</a>
+			<a href="#">Feedback</a>
+			<a href="#">Sitemap</a> 
+			<a href="#">Privacy</a> 
+			<a href="#">Terms</a> 
+			<a href="#">Agent Support</a> 
+		</div>
+    </div>
+	
+</body>
+</html>
