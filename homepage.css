@@ -327,10 +327,32 @@ float: left;
 }
 
 
-/* footer{
-    border: solid 1px black;
-    height: 133px;
-} */
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: #2A2A2B;
+    width: 100%;
+	height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.footer .footer-logo {
+	margin-left: 150px;
+}
+.footer .footer-logo img {
+	width: 50px;
+	cursor: pointer;
+}
+.footer .footer-buttons {
+	margin-left: 150px;
+}
+.footer .footer-buttons a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+	font-weight: bold;
+	margin-left: 22px;
+} 
 
 
 
