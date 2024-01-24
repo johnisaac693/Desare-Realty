@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+	top: 0;
+}
+
+.navbar img {
+    height: 60px;
+	margin-left: 150px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+	font-weight: bold;
+	float: left;
+    margin-left: -15px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+    height: 30px;
+    padding: 0 15px;
+	margin-right: 150px;
+	margin-left: 250px;
+}
+
+.account img {
+    height: 20px;
+    margin-right: 10px;
+	margin-left: 0;
+}
+
+.account span a {
+    color: white;
+    font-size: 15px;
+	margin-left: 0;
+}
+
+.background{
+	margin-top: 80px;
+}
+.background img {
+    width: 45%;
+	height: auto;
+	float: right;
+}
+
+.contact{
+	background-color: #D9D9D9;
+	width: 55%;
+	height: 636px;
+	float: right;
+	margin-bottom: 20px;
+}
+.contact h1{
+	font-size: 60px;
+	margin-top: 50px;
+	margin-left: 235px;
+}
+.contact p{
+	font-size: 35px;
+	margin-top: 50px;
+	margin-left: 150px;
+}
+
+form{
+	margin-top: 30px;
+}
+
+.form-group, .form-group-1 {
+    display: inline-block;
+    margin-right: 20px;
+	font-family: Times New Roman;
+	font-size: 25px;
+}
+
+.form-group label{
+	margin-bottom: 20px;	
+}
+
+label[for="email"], #email, #message{
+	margin-left: 150px;
+}
+
+.form-group label, .form-group-1 label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input, .form-group-1 input {
+    padding: 10px;
+    margin-bottom: 20px;
+	box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.form-group input{
+	width: 230px;
+}
+
+.form-group-1 input{
+	width: 480px;
+	height: 150px;
+}
+
+#message::placeholder {
+    position: absolute;
+    font-size: 16px;
+    color: #6C6C6C;
+	font-family: 'Inter', sans-serif;
+	top: 10px;
+	left: 10px;
+}
+
+button {
+    background-color: maroon;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    margin: 10px auto;
+    cursor: pointer;
+    border: none;
+    display: block;
+}
+
+.getintouch{
+	width: 100%;
+	height: auto;
+	margin: 10px 0;
+}
+
+.getintouch h1{
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.getintouch hr{
+	border: 1px solid black;
+}
+
+.appointment {
+	margin: 30px 70px;
+	height: 650px;
+}
+
+.appointment img{
+	border: 2px solid grey;
+	border-radius: 15px;
+	margin-left: 70px;
+	margin-top: 110px;
+}
+
+.phrase{
+	background-color: white;
+	border: 2px solid grey;
+	border-radius: 15px;
+	width: 400px;
+	height: 100px;
+	text-align: center;
+	margin-left: 65px;
+	margin-top: -570px;
+	position: absolute;
+}
+
+.phrase h2{
+	font-size: 30px;
+	margin-top: 30px;
+}
+
+.form{
+	background-color: #D9D9D9;
+	width: 650px;
+	height: 580px;
+	float: right;
+	margin-right: 130px;
+	margin-top: -640px;
+	border: 1px solid grey;
+}
+
+.form form{
+	background-color: white;
+	width: 550px;
+	height: 500px;
+	float: right;
+	margin-top: 40px;
+	margin-left: 50px;
+	position: absolute;
+	border: 1px solid grey;
+}
+
+form h3{
+	text-align: center;
+	margin: 40px 0;
+	font-size: 27px;
+}
+
+.form-group-2, .form-group-3 {
+    display: inline-block;
+    margin-left: 28px;
+    margin-top: 30px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.form-group-2 label, .form-group-3 label {
+    display: block;
+}
+
+.form-group-2 input{
+    padding: 15px;
+	width: 230px;
+    margin-bottom: 20px;
+	box-sizing: border-box;
+    border: 1px solid grey;
+	background-color: #D9D9D9;
+}
+
+.form-group-3 select{
+    width: 350px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+	background-color: #D9D9D9;
+	font-size: 18px;
+	font-family: 'Inter', sans-serif;
+}
+
+.form-group-3 select, .form-group-3 label[for="agents"] {
+	margin-left: 75px;
+}
+
+.contacts{
+	background-color: maroon;
+	width: 100%;
+	height: 250px;
+	margin-top: 200px;
+    display: flex;
+	justify-content: center;
+}
+
+.contacts .links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+	margin-top: -80px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 20%;
+	margin: 0 40px;
+}
+
+.links img {
+    width: 50%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.links .desc {
+    text-align: center;
+    margin: 10px 0;
+	color: white;
+	width: 350px;
+}
+
+.links .desc h4{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.links .desc a{
+	text-decoration: none;
+	color: white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: #2A2A2B;
+    width: 100%;
+	height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+	bottom: 0;
+}
+.footer .footer-logo {
+	margin-left: 150px;
+}
+.footer .footer-logo img {
+	width: 50px;
+	cursor: pointer;
+}
+.footer .footer-buttons {
+	margin-left: 150px;
+}
+.footer .footer-buttons a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+	font-weight: bold;
+	margin-left: 22px;
+} 
