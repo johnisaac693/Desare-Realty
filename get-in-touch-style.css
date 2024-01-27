@@ -62,7 +62,7 @@ body {
 }
 .background img {
     width: 45%;
-	height: auto;
+	height: 636px;
 	float: right;
 }
 
@@ -88,6 +88,11 @@ form{
 	margin-top: 30px;
 }
 
+#message{
+	padding: 0;
+	text-align: left;
+}
+
 .form-group, .form-group-1 {
     display: inline-block;
     margin-right: 20px;
@@ -108,12 +113,13 @@ label[for="email"], #email, #message{
     font-weight: bold;
 }
 
-.form-group input, .form-group-1 input {
+.form-group input, .form-group-1 textarea {
     padding: 10px;
     margin-bottom: 20px;
 	box-sizing: border-box;
     border: 1px solid black;
     border-radius: 10px;
+	font-family: 'Inter', sans-serif;
 }
 
 .form-group input{
