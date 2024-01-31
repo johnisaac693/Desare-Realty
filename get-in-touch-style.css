@@ -7,55 +7,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-	top: 0;
-}
 
-.navbar img {
-    height: 60px;
-	margin-left: 150px;
-}
-
-.navbar a {
-    color: black;
-    text-decoration: none;
-    font-size: 15px;
-	font-weight: bold;
-	float: left;
-    margin-left: -15px;
-}
-
-.account {
-    display: flex;
-    align-items: center;
-    background-color: black;
-    border-radius: 20px;
-    height: 30px;
-    padding: 0 15px;
-	margin-right: 150px;
-	margin-left: 250px;
-}
-
-.account img {
-    height: 20px;
-    margin-right: 10px;
-	margin-left: 0;
-}
-
-.account span a {
-    color: white;
-    font-size: 15px;
-	margin-left: 0;
-}
 
 .background{
 	margin-top: 80px;
@@ -290,6 +242,7 @@ form h3{
     margin: 10px 0;
 	color: white;
 	width: 350px;
+	cursor: pointer;
 }
 
 .links .desc h4{
@@ -302,30 +255,39 @@ form h3{
 	color: white;
 }
 
-.footer {
-    display: flex;
-    align-items: center;
-    background-color: #2A2A2B;
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-	height: 100px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-	bottom: 0;
+    height: 100%;
+    z-index: 999;
 }
-.footer .footer-logo {
-	margin-left: 150px;
+
+.content {
+    position: fixed;
+    top: 56.4%;
+    left: 50%;
+	width: 1050px;
+	height: 510px;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+    align-items: center;
 }
-.footer .footer-logo img {
-	width: 50px;
-	cursor: pointer;
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    cursor: pointer;
+	color: white;
 }
-.footer .footer-buttons {
-	margin-left: 150px;
-}
-.footer .footer-buttons a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-	font-weight: bold;
-	margin-left: 22px;
-} 

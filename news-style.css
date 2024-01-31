@@ -6,56 +6,10 @@
 body {
     font-family: 'Inter', sans-serif;
 }
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-	top: 0;
-}
-
-.navbar img {
-    height: 60px;
-	margin-left: 150px;
-}
-
-.navbar a {
-    color: black;
-    text-decoration: none;
-    font-size: 15px;
-	font-weight: bold;
-	float: left;
-    margin-left: -15px;
-}
-
-.account {
-    display: flex;
-    align-items: center;
-    background-color: black;
-    border-radius: 20px;
-    height: 30px;
-    padding: 0 15px;
-	margin-right: 150px;
-	margin-left: 250px;
-}
-
-.account img {
-    height: 20px;
-    margin-right: 10px;
-	margin-left: 0;
-}
-
-.account span a {
-    color: white;
-    font-size: 15px;
-	margin-left: 0;
-}
+ a {
+	 text-decoration: none;
+	 color: black;
+ }
 
 .background{
 	margin-top: 80px;
@@ -78,13 +32,14 @@ body {
 	padding-top: 620px;
 	padding-bottom: 20px;
 }
-.bginfo p.info, p.author{
+.bginfo p.info{
 	margin-left: 18px;
 	font-size: 20px;
 }
-.bginfo p.author{
+.bginfo p.date{
 	color: blue;
 	margin-top: 40px;
+	margin-left: 18px;
 }
 .bginfo button{
 	position: absolute;
@@ -103,7 +58,7 @@ body {
 .sides{
 	float: right;
 	width: 18%;
-	margin-top: -850px;
+	margin-top: -870px;
 	margin-right: 12px;
 }
 .side-group{
@@ -122,21 +77,6 @@ body {
 .side-group p.side-author{
 	font-size: 15px;
 	color: #285ECA;
-}
-
-.advertisement{
-	float: right;
-	width: 18%;
-	margin-top: -233px;
-	margin-right: 12px;
-	text-align: center;
-}
-.advertisement p{
-	font-family: Times New Roman;
-}
-.advertisement img{
-	width: 242px;
-	border: 1px solid black;
 }
 
 
@@ -177,6 +117,8 @@ body {
 .news-group-left .news-group .news-info p.info{
 	margin-top: 40px;
 	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .news-group-right{
@@ -184,7 +126,7 @@ body {
 	float: right;
 }
 
-.news-group-right .news-group, .news-group-right .news-ads{
+.news-group-right .news-group{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	border-bottom: 1px solid grey;
@@ -193,12 +135,6 @@ body {
 .news-group-right .news-group img{
 	width: 320px;
 	border: 1px solid black;
-	margin-bottom: 7px;
-}
-
-.news-group-right .news-ads img{
-	width: 400px;
-	border: 2px solid black;
 	margin-bottom: 7px;
 }
 
@@ -213,68 +149,10 @@ body {
 .news-group-right .news-group .news-info p.info{
 	margin-top: 40px;
 	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .news-group-right .news-group .news-info p.date{
-	margin-left: 180px;
+	margin-left: 95px;
 }
-
-.news-group-right .news-ads .ads-info{
-	float: left;
-	width: 200px;
-	height: 210px;
-	margin-right: 24px;
-}
-
-.news-group-right .news-ads .ads-info p.ads{
-	margin-top: 100px;
-	font-family: Times New Roman;
-}
-
-.pages {
-	display: flex;
-	justify-content: center;
-	padding: 20px 0;
-	width: 100%;
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.pages a {
-	color: grey;
-	padding: 8px 16px;
-	text-decoration: none;
-}
-
-.pages a.active {
-  border-bottom: 2px solid black;
-  color: black;
-}
-
-.footer {
-    display: flex;
-    align-items: center;
-    background-color: #2A2A2B;
-    width: 100%;
-	height: 100px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-	bottom: 0;
-}
-.footer .footer-logo {
-	margin-left: 150px;
-}
-.footer .footer-logo img {
-	width: 50px;
-	cursor: pointer;
-}
-.footer .footer-buttons {
-	margin-left: 150px;
-}
-.footer .footer-buttons a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-	font-weight: bold;
-	margin-left: 22px;
-} 
