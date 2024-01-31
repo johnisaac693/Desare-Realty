@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DESARE REALTY : Properties</title>
+    <title>DESARE REALTY : Get In Touch</title>
 	<link rel="stylesheet" href="get-in-touch-style.css">
+	<link rel="stylesheet" href="nav and foot.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
 
     <div class="navbar">
 		<img src="images/logo.jpg" alt="Logo">
-		<a href="#">Buy</a>
-		<a href="#">Sell</a>
-		<a href="#">Rent</a>
-        <a href="#">Mortgage</a> 
-        <a href="#">Find Agents</a> 
-        <a href="#">News & Trends</a> 
+		<a href="homepage.html">Home</a>
+		<a href="aboutus.html">About Us</a>
+		<a href="get-in-touch.html">Contact Us</a>
+        <a href="FAA.html">Find Agents</a> 
+        <a href="news.html">News & Trends</a> 
+        <a href="faq.html">FAQ</a>
         <div class="account">
             <img src="images/user.png" alt="User">
             <span><a href="#">Account</span></a> 
@@ -52,7 +53,7 @@
 		<h1>Get In Touch</h1>
 		<hr>
 		<div class="appointment">
-			<img src="images/caller.jpg" alt="Call">
+			<img src="images/call.jpg" alt="Call">
 			<div class="phrase">
 				<h2>We are here for you.</h2>
 			</div>
@@ -91,8 +92,8 @@
 	
 	<div class="contacts">
 		<div class="links">
-			<img src="images/pin-location.png" alt="location">
-			<div class="desc">
+			<img src="images/location.png" alt="location">
+			<div class="desc" onclick="openPopup('popup')">
 				<h4>OUR OFFICE LOCATION</h4>
 				<p>RJ TITUS Commercial Bldg., 
 				<br>
@@ -101,12 +102,20 @@
 				City of Biñan, Laguna
 				</p>
 			</div>
+				<div id="popup" class="popup">
+					<div class="content">
+						<span class="close" onclick="closePopup()">&times;</span>
+						<h1 style="text-align: center; font-family: 'Inter', sans-serif; font-size: 40px;">OUR OFFICE LOCATION</h1>
+						<p style="text-align: center; font-family: 'Inter', sans-serif; font-size: 30px;">RJ TITUS Commercial Bldg., Brgy. San Francisco, City of Biñan, Laguna</p>
+						<iframe width="100%" height="400px" src="https://www.openstreetmap.org/export/embed.html?bbox=121.05983287096025%2C14.333659868536104%2C121.06188744306567%2C14.335161919663836&amp;layer=mapnik&amp;marker=14.334410895357765%2C121.06086015701294" style="border: 2px solid black"></iframe>
+					</div>
+				</div>
 		</div>		 
 		<div class="links">
 			<img src="images/fbpage.png" alt="fbpage">
 			<div class="desc">
 				<h4>FACEBOOK PAGE</h4>
-				<a href="">DESARE REALTY</a>
+				<a href="https://www.facebook.com/desarerealtyofficial">DESARE REALTY</a>
 			</div>
 		</div>
 		<div class="links">
@@ -128,14 +137,11 @@
 		</div>
 		<div class="footer-buttons">
 			<a href="#">About Us</a>
-			<a href="#">Career</a>
-			<a href="#">Feedback</a>
-			<a href="#">Sitemap</a> 
-			<a href="#">Privacy</a> 
-			<a href="#">Terms</a> 
-			<a href="#">Agent Support</a> 
+			<a href="#">Frequently Asked Questions</a> 
 		</div>
     </div>
+	
+	<script src="get-in-touch-script.js"></script>
 	
 </body>
 <script>
