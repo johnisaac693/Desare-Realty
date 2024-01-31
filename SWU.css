@@ -1,0 +1,141 @@
+* {
+    	margin: 0;
+    	padding: 0;
+}
+
+body {
+    	font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    	background-color: white;
+    	position: fixed;
+    	width: 100%;
+    	padding: 10px 20px;
+    	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    	z-index: 1000;
+}
+
+.navbar img {
+    	height: 60px;
+	margin-left: 150px;
+}
+
+.navbar a {
+    	color: black;
+    	text-decoration: none;
+    	font-size: 15px;
+	font-weight: bold;
+	float: left;
+    	margin-left: -15px;
+}
+
+.account {
+    	display: flex;
+    	align-items: center;
+    	background-color: black;
+    	border-radius: 20px;
+    	height: 30px;
+    	padding: 0 15px;
+	margin-right: 150px;
+	margin-left: 250px;
+}
+
+.account img {
+    	height: 20px;
+    	margin-right: 10px;
+	margin-left: 0;
+}
+
+.account span a {
+    	color: white;
+    	font-size: 15px;
+	margin-left: 0;
+}
+
+.background img {
+    	width: 100%;
+}
+.text {
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	color: Black;
+    	text-align: center;
+    	margin-top: -500px;
+}
+
+.text h1 {
+    	font-size: 70px;
+ 	font-weight:bold;
+        color:#000000;
+    	padding-bottom: 10px;
+    	padding-right: 0px;
+}
+.BAS {
+    	display: inline-block;
+    	align-items: center;
+    	background-color: #D9D9D9;
+	border: 1px solid black;
+    	border-radius: 20px;
+    	height: 30px;
+        width:250px;
+    	padding: 0 30px;
+	margin-right: 250px;
+	margin-left: 250px;
+        margin: auto;	 
+	padding-top: 10px;    
+}
+.BAS span b {
+    	color: black;
+    	font-size: 15px;
+	margin-left: 0;
+	font-weight: 400;
+	padding-top: 10px;
+}
+.Text h2 {
+	text-align:center;
+	padding-bottom:30px;
+}
+.Benefits-container {
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+.Benefits1 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	display: flex;
+	width:65%;
+	margin:20 px 0;
+}
+
+.Benefits img {
+	width: 50%
+	height:auto;
+	border-radius: 50px;
+	border: 1px solid black;
+}
+.content {
+	width: 50%;
+	text-align:left;
+	padding-left:30px; 
+}
+.Text2 {
+	text-align:center;
+	padding-top:400px;
+	padding-bottom:30px;
+}
+
+footer {
+	/* YUNG FOOTER */
+}
+
+
+	
+
+
