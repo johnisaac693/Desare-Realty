@@ -18,7 +18,7 @@
         <a href="faq.html">FAQ</a>
         <div class="account">
             <img src="images/user.png" alt="User">
-            <span><a href="#">Account</span></a>
+            <span><a href="#">Account</span></a> 
         </div>  
     </div>
 	
@@ -27,15 +27,8 @@
 	<form>
 		<h2>Property Information</h2>
 		<div class="form-group-2">
-            <label for="price-range">Price Range:</label>
-				<select id="price-range" name="price-range">
-					<option value="" selected disabled>PLEASE SELECT</option>
-					<option value="<1M">Less than 1M</option>
-					<option value="1M-2M">1M-2M</option>
-					<option value="2M-3M">2M-3M</option>
-					<option value="3M-4M">3M-4M</option>
-					<option value="4M-5M">4M-5M</option>
-				</select>
+			<label for="price" class="price">Price</label>
+            <input type="number" id="price" name="price" pattern="[0-9]+">
         </div>
 		<div class="form-group-3">
 			<label for="property-type">Property Type:</label>
@@ -50,42 +43,21 @@
 					<option value="house">House</option>
 				</select>
         </div>
-		<div class="form-group-1">
-			<label for="home_address" class="home_address">Home Address</label>
-            <input type="text" id="street_address" name="street_address">
-            <label for="street_address">Street Address</label>
-        </div>
-        <div class="form-group-2">
-            <input type="text" id="street_address_line_2" name="street_address_line_2">
-            <label for="street_address_line_2">Street Address Line 2</label>
-        </div>
-		<div class="form-group-3">
-            <input type="text" id="city" name="city">
-            <label for="city">City</label>
-        </div>
 		<div class="form-group-2">
-			<input type="text" id="state_province" name="state_province">
-			<label for="state/province">State/Province</label>
+			<label for="address" class="address">Address</label>
+            <input type="text" id="address" name="address">
         </div>
 		<div class="form-group-3">
-            <input type="text" id="postal_zip_code" name="postal_zip_code">
-            <label for="postal_zip_code">Postal/Zip Code</label>
-        </div>
-		<div class="form-group-2">
-            <input type="text" id="country" name="country">
-            <label for="country">Country</label>
-        </div>
-		<div class="form-group-3">
-            <input type="number" id="bedrooms" name="bedrooms" pattern="[0-9]+">
             <label for="bedrooms">Bedrooms</label>
+            <input type="number" id="bedrooms" name="bedrooms" pattern="[0-9]+">
         </div>
 		<div class="form-group-2">
-            <input type="number" id="bathroom" name="bathroom" pattern="[0-9]+">
             <label for="bathroom">Bathroom</label>
+            <input type="number" id="bathroom" name="bathroom" pattern="[0-9]+">
         </div>
 		<div class="form-group-3">
-            <input type="number" id="approximate_sqm" name="approximate_sqm"pattern="[0-9]+">
             <label for="approximate_sqm">Approximate sqm</label>
+            <input type="number" id="approximate_sqm" name="approximate_sqm"pattern="[0-9]+">
         </div>
 		
     </form>
