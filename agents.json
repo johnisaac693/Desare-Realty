@@ -1,40 +1,9 @@
 [
-    {
-     "Name": "John Isaac Rizon",
-     "Address": "San Pedro, Laguna",
-     "Facebook": "https://www.facebook.com/calcrubimagne/"
-    },
-    {
-        "Name": "Sarah Michelle Orejo",
-        "Address": "Binan City, Laguna",
-        "Facebook": "https://www.facebook.com/calcrubimagne/"
-    },
-    {
-        "Name": "Charles Aaron Cayabyab",
-        "Address": "Binan City, Laguna",
-        "Facebook": "https://www.facebook.com/calcrubimagne/"
-       },
-       {
-        "Name": "Aldrich Calabio",
-        "Address": "Binan City, Laguna",
-        "Facebook": "https://www.facebook.com/calcrubimagne/"
-       },
-       {
-        "Name": "Jamaica Panganiban",
-        "Address": "Binan City, Laguna",
-        "Facebook": "https://www.facebook.com/calcrubimagne/"
-       },
-       {
-        "Name": "Missy Janelle Tolosa",
-        "Address": "Binan City, Laguna",
-        "Facebook": "https://www.facebook.com/calcrubimagne/"
-       },
-       {
-        "Name": "Vincent Almendral",
-        "Address": "Binan City, Laguna",
-        "Facebook": "https://www.facebook.com/calcrubimagne/"
-       }
-       
-
-   
+    {"name": "John Isaac Rizon", "link": "https://www.facebook.com/calcrubimagne", "image": "membersImages/member1.jpg"},
+    {"name": "Sarah Michelle Orejo", "link": "https://www.facebook.com/sarah.michelle.orejo.18", "image": "membersImages/member2.jpg"},
+    {"name": "Charles Aaron Cayabyab", "link": "https://www.facebook.com/cab.cybyb", "image": "membersImages/member3.jpg"},
+    {"name": "Genesis Jamaica Panganiban", "link": "https://www.facebook.com/jamaica.p", "image": "membersImages/member4.jpg"},
+    {"name": "John Aldrich Calabio", "link": "https://www.facebook.com/joshuacalabio12", "image": "membersImages/member5.jpg"},
+    {"name": "Missy Janelle Tolosa", "link": "https://www.facebook.com/missy610", "image": "membersImages/member6.jpg"},
+    {"name": "Vincent Almendral", "link": "https://www.facebook.com/vincent.almendral", "image": "membersImages/account.png"}
 ]
