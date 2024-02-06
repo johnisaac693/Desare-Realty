@@ -66,7 +66,7 @@ session_start();
 	
 	<div class="properties">
 		<h2>Sold Listings</h2>
-			<div class="property-listing">
+			<!-- <div class="property-listing">
 				<div class="property-card">
 					<img src="images/sold.jpg" alt="Sold House">
 					<div class="description">
@@ -81,7 +81,7 @@ session_start();
 					</div>
 					<label class="sold">SOLD!</label>
 				</div>
-			</div>
+			</div> -->
 	</div>
 	
 	<button class="btnNewListing"><a href="house-listing-form.php" style = "text-decoration: none; color: white;">Create new listing</a></button>
