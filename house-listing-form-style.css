@@ -64,7 +64,7 @@ h2 {
 }
 
 
-button {
+input[name="submit"] {
     background-color: maroon;
     color: white;
     font-size: 25px;

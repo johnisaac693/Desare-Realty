@@ -1,3 +1,22 @@
+<?php
+session_start();
+
+// Check if the user is already logged in
+if(isset($_SESSION['email'])) {
+    // User is logged in, display a popup and redirect to homepage
+    echo "<script>
+            var logout = confirm('You are already logged in. Please log out first to access the registration form.');
+            if (logout) {
+                window.location.href = 'logout.php';
+            } else {
+                window.location.href = 'homepage.php';
+            }
+          </script>";
+    exit(); // Make sure to exit after displaying the popup
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,19 +27,38 @@
 </head>
 <body>
 
-    <div class="navbar">
+<div class="navbar">
 		<img src="images/logo.jpg" alt="Logo">
-		<a href="homepage.html">Home</a>
-		<a href="aboutus.html">About Us</a>
-		<a href="get-in-touch.html">Contact Us</a>
-        <a href="FAA.html">Find Agents</a> 
-        <a href="news.html">News & Trends</a> 
-        <a href="faq.html">FAQ</a>
+		<a href="homepage.php">Home</a>
+		<a href="properties.php"></a>
+		<a href="aboutus.php">About Us</a>
+		<a href="get-in-touch.php">Contact Us</a>
+		<a href="location.php">Find Us</a>
+        <a href="FAA.php">Find Agents</a> 
+        <a href="news.php">News & Trends</a> 
+        <a href="faq.php">FAQ</a>
+        <a href="profile.php">Seller Profile</a>
         <div class="account">
             <img src="images/user.png" alt="User">
-            <span><a href="#">Account</span></a> 
+            <span><a href="#" onclick="handleAccountClick()">Account</a></span>
+
         </div>  
     </div>
+
+	<script>
+		function handleAccountClick() {
+    		<?php
+   				 if(isset($_SESSION['email'])) {
+       		 		echo "var logout = confirm('You are already logged in. Do you want to log out?');";
+       		 		echo "if (logout) { window.location.href = 'logout.php'; }";
+		
+    				} else {
+       		 			echo "var loginOrSignup = confirm('Please log in or sign up.');";
+        				echo "if (loginOrSignup) { window.location.href = 'login.php'; } else { return false; }";
+   			 		}
+    		?>
+		}
+	</script>
 	
 	<div class="background">
 		<img src="images/bg-seller.jpg" alt="background">
@@ -51,7 +89,7 @@
 			<label for="password">Password</label>
 			<input type="password" id="password" name="password">
 		</div>
-		<button type="submit" name="register">Register</button>
+		<input type="submit" name="register" value = "Register"></input>
 	</form>
 	
 	
@@ -66,14 +104,12 @@
 			<a href="#">Frequently Asked Questions</a> 
 		</div>
     </div>
-	
 </body>
 <?php
 
-include 'functions.php';
-session_start();
+	include 'functions.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
+	if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
    $name = $_POST['fname']; // Corrected to 'fname' from 'name'
    $email = $_POST['email'];
    $phonenum = $_POST['contact_number'];
@@ -88,17 +124,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
       } else {
          // Register the user and store values in session variables
          registerUser($name, $email, $phonenum, $address, $password);
-
+		echo'<script>alert("User Registered!")</script>';
          // Store values in session variables
          $_SESSION['email'] = $email;
          $_SESSION['password'] = $password;
+		 $_SESSION['name'] = $name;
 
          // Redirect to homepage
-         header('Location: profile.html');
+         header('Location: profile.php');
          exit(); // Make sure to exit after a header redirect
       }
    }
-}
+	}
 
 ?>
 

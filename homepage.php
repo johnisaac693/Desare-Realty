@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,21 +11,38 @@
     <link rel="stylesheet" href="nav and foot.css">
 </head>
 <body>
-    <div class="navbar">
+<div class="navbar">
 		<img src="images/logo.jpg" alt="Logo">
-		<a href="homepage.html">Home</a>
-		<a href="aboutus.html">About Us</a>
-		<a href="get-in-touch.html">Contact Us</a>
-        <a href="properties.html">Properties</a>
-        <a href="FAA.html">Find Agents</a> 
-        <a href="news.html">News & Trends</a> 
-        <a href="faq.html">FAQ</a>
-        <a href="SWU.html">Sell With Us</a>
+		<a href="homepage.php">Home</a>
+		<a href="properties.php"></a>
+		<a href="aboutus.php">About Us</a>
+		<a href="get-in-touch.php">Contact Us</a>
+		<a href="location.php">Find Us</a>
+        <a href="FAA.php">Find Agents</a> 
+        <a href="news.php">News & Trends</a> 
+        <a href="faq.php">FAQ</a>
+        <a href="profile.php">Seller Profile</a>
         <div class="account">
             <img src="images/user.png" alt="User">
-            <span><a href="login.html">Account</span></a> 
+            <span><a href="#" onclick="handleAccountClick()">Account</a></span>
+
         </div>  
     </div>
+
+	<script>
+		function handleAccountClick() {
+    		<?php
+   				 if(isset($_SESSION['email'])) {
+       		 		echo "var logout = confirm('You are already logged in. Do you want to log out?');";
+       		 		echo "if (logout) { window.location.href = 'logout.php'; }";
+		
+    				} else {
+       		 			echo "var loginOrSignup = confirm('Please log in or sign up.');";
+        				echo "if (loginOrSignup) { window.location.href = 'login.php'; } else { return false; }";
+   			 		}
+    		?>
+		}
+	</script>
 
     <div class="mainbody flex-column">
         <div class="searchsegment">
@@ -63,7 +83,7 @@
                  </div>
     
                  <div class="agent-button">
-                    <button class="findagent"><a href="#">FIND AN AGENT</a></button>
+                    <button class="findagent"><a href="FAA.php">FIND AN AGENT</a></button>
                  </div>
               </div>
 
@@ -72,58 +92,13 @@
             </div>
         </div>
 
-        <!-- <div class="trendingsearches">
-            <div class="trendcontainer">
-                <h1>Trending Searches Today</h1>
-                <div class="grid-searches">
-                    <div class="searchitem">
-                        <img src="https://picsum.photos/266/193">
-                        <div class="searchdesc">New Listings</div>
-                    </div>
-
-                    <div class="searchitem">
-                        <img src="https://picsum.photos/266/193">
-                        <div class="searchdesc">Newly Constructed</div>
-                    </div>
-
-                    <div class="searchitem">
-                        <img src="https://picsum.photos/266/193">
-                        <div class="searchdesc">New Home Communities</div>
-                    </div>
-
-                    <div class="searchitem">
-                        <img src="https://picsum.photos/266/193">
-                        <div class="searchdesc">Reduced Prices</div>
-                    </div>
-
-                    <div class="searchitem">
-                        <img src="https://picsum.photos/266/193">
-                        <div class="searchdesc">Recently Sold</div>
-                    </div>
-
-                    <div class="searchitem">
-                        <img src="https://picsum.photos/266/193">
-                        <div class="searchdesc">Open House</div>
-                    </div>
-
-                    <div class="searchitem">
-                        <img src="https://picsum.photos/266/193">
-                        <div class="searchdesc">Condos</div>
-                    </div>
-
-                    <div class="searchitem">
-                        <img src="https://picsum.photos/266/193">
-                        <div class="searchdesc">Lots/Lands</div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+       
 
         <div class="articles">
             <div class="articlecontent">
                 <div class="text">Want to sell your property? Create a Seller Account Now.</div>
                 
-                <button class="readarticles"><a href="seller-registration-form.html">Create Seller Account</a></button>
+                <button class="readarticles"><a href="seller-registration-form.php">Create Seller Account</a></button>
             </div>
 
         </div>
